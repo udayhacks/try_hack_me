@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>FFUF Report - </title>
+
+    
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+	/>
+	<link 
+	  rel="stylesheet" 
+	  type="text/css" 
+	  href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css"
+	/>
+  
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">FFUF</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        </ul>
+      </div>
+    </nav>
+
+    <main class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br /><br />
+        <h1 class="header center ">FFUF Report</h1>
+        <div class="row center">
+
+		<pre>ffuf -u http://10.10.76.239/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt -c -s -of html -o /home/ravan/j</pre>
+		<pre>2024-11-05T12:07:37-05:00</pre>
+
+   <table id="ffufreport">
+        <thead>
+        <div style="display:none">
+|result_raw|StatusCode|FUZZ|Url|RedirectLocation|Position|ContentLength|ContentWords|ContentLines|ContentType|Duration|Resultfile|ScraperData|FfufHash|
+        </div>
+          <tr>
+              <th>Status</th>
+              <th>FUZZ</th>
+			  <th>URL</th>
+			  <th>Redirect location</th>
+              <th>Position</th>
+              <th>Length</th>
+              <th>Words</th>
+			  <th>Lines</th>
+			  <th>Type</th>
+              <th>Duration</th>
+			  <th>Resultfile</th>
+              <th>Scraper data</th>
+              <th>Ffuf Hash</th>
+          </tr>
+        </thead>
+
+        <tbody>
+			
+                <div style="display:none">
+|result_raw|301|docs|http://10.10.76.239/docs|http://10.10.76.239/docs/|76|310|20|10|text/html; charset=iso-8859-1|175.031923ms|||6b6564c|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>docs</td>
+                    
+                    <td><a href="http://10.10.76.239/docs">http://10.10.76.239/docs</a></td>
+                    <td><a href="http://10.10.76.239/docs/">http://10.10.76.239/docs/</a></td>
+                    <td>76</td>
+                    <td>310</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>175.031923ms</td>
+                    <td></td>
+					<td></td>
+					<td>6b6564c</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|config|http://10.10.76.239/config|http://10.10.76.239/config/|78|312|20|10|text/html; charset=iso-8859-1|174.914881ms|||6b6564e|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>config</td>
+                    
+                    <td><a href="http://10.10.76.239/config">http://10.10.76.239/config</a></td>
+                    <td><a href="http://10.10.76.239/config/">http://10.10.76.239/config/</a></td>
+                    <td>78</td>
+                    <td>312</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>174.914881ms</td>
+                    <td></td>
+					<td></td>
+					<td>6b6564e</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|external|http://10.10.76.239/external|http://10.10.76.239/external/|639|314|20|10|text/html; charset=iso-8859-1|178.148856ms|||6b65627f|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>external</td>
+                    
+                    <td><a href="http://10.10.76.239/external">http://10.10.76.239/external</a></td>
+                    <td><a href="http://10.10.76.239/external/">http://10.10.76.239/external/</a></td>
+                    <td>639</td>
+                    <td>314</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>178.148856ms</td>
+                    <td></td>
+					<td></td>
+					<td>6b65627f</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|server-status|http://10.10.76.239/server-status||3781|292|21|11|text/html; charset=iso-8859-1|175.096025ms|||6b656ec5|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>server-status</td>
+                    
+                    <td><a href="http://10.10.76.239/server-status">http://10.10.76.239/server-status</a></td>
+                    <td><a href=""></a></td>
+                    <td>3781</td>
+                    <td>292</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>175.096025ms</td>
+                    <td></td>
+					<td></td>
+					<td>6b656ec5</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|302||http://10.10.76.239/|login.php|3809|0|1|1|text/html|179.206255ms|||6b656ee1|
+                </div>
+                <tr class="result-302" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">302</font></td>
+                    
+                        <td></td>
+                    
+                    <td><a href="http://10.10.76.239/">http://10.10.76.239/</a></td>
+                    <td><a href="login.php">login.php</a></td>
+                    <td>3809</td>
+                    <td>0</td>
+                    <td>1</td>
+					<td>1</td>
+					<td>text/html</td>
+					<td>179.206255ms</td>
+                    <td></td>
+					<td></td>
+					<td>6b656ee1</td>
+                </tr>
+            
+        </tbody>
+      </table>
+
+        </div>
+        <br /><br />
+      </div>
+    </main>
+
+    
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#ffufreport').DataTable(
+            {
+                "aLengthMenu": [
+                    [250, 500, 1000, 2500, -1],
+                    [250, 500, 1000, 2500, "All"]
+                ]
+            }
+        )
+        $('select').formSelect();
+        });
+    </script>
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+    </style>
+  </body>
+</html>
+
+	
